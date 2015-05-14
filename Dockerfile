@@ -4,4 +4,5 @@ ENV DEBIAN_FRONTEND noninteractive
 
 RUN apt-get update && \
     apt-get -y upgrade && \
-    apt-get install -y nodejs npm coffeescript
+    apt-get install -y nodejs npm coffeescript && \
+    ln -s /usr/bin/nodejs /usr/local/bin/node
